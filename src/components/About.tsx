@@ -1,4 +1,5 @@
 import React from 'react';
+import profileImg from '@/assets/img.jpg';
 
 const About = () => {
   return (
@@ -31,7 +32,7 @@ const About = () => {
               <img 
                 alt="Pushkaraj Palli" 
                 className="w-full h-full object-cover grayscale" 
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBowWiXd8U-JoYTOz1evQDL2TlwogneswI-ez6M8UOOn4ZQrJlB0EF5cfOm4Fu-jTpI4Dg1Ur8A7M65lXbcrb3jM2ZSiRZfONuoSwT7P1GVsD0hgcUcbBOmFQ_itp3SZGYc5dkRea1voKs7bSCUUORneDZ9c2DEhg1tO_k5S0G7FGorNTq5vGsrfORTUgQE3cATJjj-IOlj_V-LdZoWhAvIFVBJcMEanGIfx0KWIe6XPTIKphiOq3Y_-HTHwiLj3_i4iuSVPSxijNY"
+                src={profileImg.src}
               />
             </div>
             <h3 className="font-headline font-black text-3xl uppercase mb-2">Pushkaraj Palli</h3>

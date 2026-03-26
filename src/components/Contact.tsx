@@ -1,11 +1,20 @@
 import React from 'react';
+import TextType from './TextType';
 
 const Contact = () => {
   return (
     <section className="py-24 px-6 bg-primary-container border-t-[5px] border-inverse-surface" id="contact">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
-          <h2 className="font-headline font-black text-7xl uppercase leading-[0.9] mb-8 text-inverse-surface">Let's build<br/>something<br/><span className="text-white">Radical.</span></h2>
+          <TextType 
+            text="LET'S BUILD SOMETHING RADICAL."
+            as="h2"
+            typingSpeed={90}
+            pauseDuration={1800}
+            showCursor={true}
+            cursorCharacter="_"
+            className="font-headline font-black text-6xl md:text-7xl uppercase leading-[0.9] mb-8 text-inverse-surface block min-h-[180px] md:min-h-[220px]"
+          />
           <p className="text-2xl font-bold uppercase mb-12 max-w-md">I am currently available for new projects, full-time roles, or collaborative experiments.</p>
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
