@@ -2,23 +2,30 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 w-full border-b-[5px] border-[#0e0e0e] bg-white/95 backdrop-blur-sm dark:bg-black/95">
-      <div className="flex justify-between items-center px-6 py-4 max-w-[1440px] mx-auto">
-        <a className="text-2xl font-black text-[#0e0e0e] dark:text-white uppercase tracking-tighter" href="#">
-          DEV.MERN
-        </a>
-        <div className="hidden md:flex gap-8 items-center font-headline font-bold uppercase tracking-tight">
-          <a className="text-[#0e0e0e] dark:text-white hover:translate-y-[-2px] transition-transform duration-200" href="#projects">Projects</a>
-          <a className="text-[#2f2f2f] dark:text-gray-400 hover:translate-y-[-2px] transition-transform duration-200" href="#skills">Skills</a>
-          <a className="text-[#2f2f2f] dark:text-gray-400 hover:translate-y-[-2px] transition-transform duration-200" href="#about">About</a>
-          <a className="bg-primary-container px-6 py-2 border-[3px] border-[#0e0e0e] neo-shadow hover:translate-y-[-2px] active:translate-y-[2px] active:shadow-none transition-all" href="#contact">
-            Contact
+    <nav className="fixed top-8 left-0 w-full px-8 z-50 flex justify-end items-center pointer-events-none">
+      {/* Navigation Box */}
+      <div className="bg-white border-[4px] border-[#0e0e0e] neo-shadow flex items-center px-4 py-2 pointer-events-auto gap-6 transition-all">
+        <div className="flex gap-2 items-center font-condensed font-bold uppercase tracking-widest text-sm">
+          <a className="text-[#0e0e0e] hover:bg-[#0e0e0e] hover:text-white px-3 py-1 transition-all duration-200 flex items-center gap-1" href="#projects">
+            <span className="opacity-40 font-headline font-normal">/</span>PROJECTS
+          </a>
+          <a className="text-[#0e0e0e] hover:bg-[#0e0e0e] hover:text-white px-3 py-1 transition-all duration-200 flex items-center gap-1" href="#skills">
+            <span className="opacity-40 font-headline font-normal">/</span>SKILLS
+          </a>
+          <a className="text-[#0e0e0e] hover:bg-[#0e0e0e] hover:text-white px-3 py-1 transition-all duration-200 flex items-center gap-1" href="#about">
+            <span className="opacity-40 font-headline font-normal">/</span>ABOUT
+          </a>
+          <a className="text-[#0e0e0e] hover:text-primary transition-colors px-3 py-1 flex items-center gap-1" href="#contact">
+            <span className="opacity-40 font-headline font-normal">/</span>CONTACT
           </a>
         </div>
-        {/* Mobile Menu Icon (Placeholder) */}
-        <button className="md:hidden">
-          <span className="material-symbols-outlined text-3xl">menu</span>
-        </button>
+
+        <a 
+          className="bg-[#f3f300] px-4 py-1.5 border-[3px] border-[#0e0e0e] font-headline font-black uppercase text-xs hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[3px_3px_0px_0px_rgba(14,14,14,1)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all" 
+          href="#contact"
+        >
+          HIRE ME
+        </a>
       </div>
     </nav>
   );
