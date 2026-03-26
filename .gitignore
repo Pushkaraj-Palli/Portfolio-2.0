@@ -41,7 +41,7 @@ yarn-error.log*
 next-env.d.ts
 
 # agent files
-**/AGENTS.md
+
 **/CLAUDE.md
 **/ANTIGRAVITY.md
 **/GEMINI.md
