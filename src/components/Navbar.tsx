@@ -15,7 +15,7 @@ const Navbar = () => {
           <a className="text-[#0e0e0e] hover:bg-[#0e0e0e] hover:text-white px-3 py-1 transition-all duration-200 flex items-center gap-1" href="#about">
             <span className="opacity-40 font-headline font-normal">/</span>ABOUT
           </a>
-          <a className="text-[#0e0e0e] hover:text-primary transition-colors px-3 py-1 flex items-center gap-1" href="#contact">
+          <a className="text-[#0e0e0e] hover:bg-[#0e0e0e] hover:text-white px-3 py-1 transition-all duration-200 flex items-center gap-1" href="#contact">
             <span className="opacity-40 font-headline font-normal">/</span>CONTACT
           </a>
         </div>
@@ -24,7 +24,7 @@ const Navbar = () => {
           className="bg-[#f3f300] px-4 py-1.5 border-[3px] border-[#0e0e0e] font-headline font-black uppercase text-xs hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[3px_3px_0px_0px_rgba(14,14,14,1)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all" 
           href="#contact"
         >
-          HIRE ME
+          RESUME
         </a>
       </div>
     </nav>
