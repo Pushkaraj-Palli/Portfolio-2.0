@@ -7,10 +7,10 @@ const About = () => {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="lg:col-span-7 flex flex-col gap-8">
           <div className="bg-white/80 backdrop-blur-sm border-[5px] border-inverse-surface p-8 neo-shadow">
-            <h2 className="font-headline font-extrabold text-5xl uppercase mb-6 underline decoration-primary-container decoration-[8px] underline-offset-8">The Manifesto</h2>
+            <h2 className="font-headline font-extrabold text-5xl uppercase mb-6 underline decoration-primary-container decoration-[8px] underline-offset-8">WHO AM I?</h2>
             <div className="space-y-4 text-lg font-medium">
-              <p>I don't just write code; I architect digital experiences that demand attention. In a world of cookie-cutter templates, I choose the bold, the functional, and the unapologetic.</p>
-              <p>My journey in the MERN stack started with a curiosity for how data flows from a MongoDB document to a React component. Today, I build scalable systems that bridge the gap between complex logic and human-centric design.</p>
+              <p>I’m a full-stack developer focused on building modern, scalable web applications. I combine clean frontend design with strong backend logic to create products that are efficient, reliable, and user-focused.</p>
+              <p>I enjoy working on real-world problems, especially where performance and usability matter. Whether it’s developing APIs, handling data, or crafting interfaces, I aim to deliver solutions that make an impact.</p>
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -37,13 +37,16 @@ const About = () => {
             </div>
             <h3 className="font-headline font-black text-3xl uppercase mb-2">Pushkaraj Palli</h3>
             <p className="font-headline font-bold text-primary mb-6">MERN ARCHITECT</p>
-            <div className="flex justify-center gap-4">
-              <a className="p-3 bg-inverse-surface text-white hover:bg-primary-container hover:text-inverse-surface transition-colors border-[2px] border-inverse-surface" href="#">
-                <span className="material-symbols-outlined">link</span>
-              </a>
-              <a className="p-3 bg-inverse-surface text-white hover:bg-primary-container hover:text-inverse-surface transition-colors border-[2px] border-inverse-surface" href="#">
-                <span className="material-symbols-outlined">alternate_email</span>
-              </a>
+            {/* Status badges */}
+            <div className="flex flex-wrap justify-center gap-3">
+              <div className="flex items-center gap-2 bg-inverse-surface text-white border-[2px] border-inverse-surface px-4 py-2 font-mono font-bold text-sm uppercase tracking-wider">
+                <span className="text-base leading-none">📍</span>
+                Location: Worldwide
+              </div>
+              <div className="flex items-center gap-2 bg-[#39ff14] text-inverse-surface border-[2px] border-inverse-surface px-4 py-2 font-mono font-bold text-sm uppercase tracking-wider">
+                <span className="inline-block w-3 h-3 rounded-full bg-[#1ab800] border border-black/20 animate-pulse"></span>
+                Status: Available
+              </div>
             </div>
           </div>
         </div>

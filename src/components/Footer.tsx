@@ -8,13 +8,13 @@ const Footer = () => {
           PUSHKARAJ PALLI
         </div>
         <p className="font-headline font-bold text-sm uppercase text-white opacity-60">
-          © 2024 FULL STACK MANIFESTO. BUILT WITH MERN.
+          © 2026 FULL STACK MANIFESTO. BUILT WITH MERN.
         </p>
         <div className="flex gap-6 font-headline font-bold text-sm uppercase">
-          <a className="text-white hover:text-[#00ffff] transition-colors" href="#">GitHub</a>
-          <a className="text-white hover:text-[#00ffff] transition-colors" href="#">LinkedIn</a>
-          <a className="text-white hover:text-[#00ffff] transition-colors" href="#">Twitter</a>
-          <a className="text-white hover:text-[#00ffff] transition-colors" href="#">Email</a>
+          <a className="text-white hover:text-[#00ffff] transition-colors" href="https://github.com/Pushkaraj-Palli/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a className="text-white hover:text-[#00ffff] transition-colors" href="https://www.linkedin.com/in/pushkaraj-palli-748296269/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a className="text-white hover:text-[#00ffff] transition-colors" href="https://leetcode.com/u/2005pushkarajpalli/" target="_blank" rel="noopener noreferrer">Leetcode</a>
+          <a className="text-white hover:text-[#00ffff] transition-colors" href="mailto:pallipushkaraj@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
         </div>
       </div>
     </footer>

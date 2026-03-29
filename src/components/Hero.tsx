@@ -29,8 +29,8 @@ const Hero = () => {
         <p className="font-headline font-bold text-2xl md:text-4xl uppercase text-inverse-surface mb-8 tracking-tight">
           Full Stack / MERN Developer
         </p>
-        <p className="text-xl md:text-2xl font-medium max-w-2xl mx-auto mb-12 border-l-8 border-primary-container pl-6 text-left italic">
-          "Building the future, one component at a time."
+        <p className="text-xl md:text-2xl font-medium max-w-4xl mx-auto mb-12 text-center italic">
+          "From pixels to APIs — I build complete web experiences."
         </p>
         <div className="flex flex-col md:flex-row gap-6 justify-center">
           <a className="bg-primary-container text-inverse-surface font-headline font-bold text-xl uppercase px-10 py-5 border-[4px] border-inverse-surface neo-shadow-lg hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(14,14,14,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all pointer-events-auto" href="#projects">
