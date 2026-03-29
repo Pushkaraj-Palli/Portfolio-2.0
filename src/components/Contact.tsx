@@ -1,21 +1,64 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import TextType from './TextType';
 
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+  const [status, setStatus] = useState<FormStatus>('idle');
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!name.trim() || !email.trim() || !message.trim()) return;
+
+    setStatus('submitting');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          message: message.trim(),
+        }),
+      });
+
+      if (!res.ok) throw new Error('Server error');
+
+      setStatus('success');
+      setName('');
+      setEmail('');
+      setMessage('');
+      setTimeout(() => setStatus('idle'), 4000);
+    } catch (err) {
+      console.error('Contact form error:', err);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 4000);
+    }
+  };
+
   return (
     <section className="py-24 px-6 bg-primary-container border-t-[5px] border-inverse-surface" id="contact">
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
-          <TextType 
+          <TextType
             text="Have an idea? Let's bring it to life"
             as="h2"
-            typingSpeed={90 }
+            typingSpeed={90}
             pauseDuration={1800}
             showCursor={true}
             cursorCharacter="_"
             className="font-headline font-black text-6xl md:text-7xl uppercase leading-[0.9] mb-8 text-inverse-surface block min-h-[180px] md:min-h-[220px]"
           />
-          <p className="text-2xl font-bold uppercase mb-12 max-w-md">I am currently available for new projects, full-time roles, or collaborative experiments.</p>
+          <p className="text-2xl font-bold uppercase mb-12 max-w-md">
+            I am currently available for new projects, full-time roles, or collaborative experiments.
+          </p>
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
               <div className="bg-inverse-surface text-white p-3 border-[2px] border-inverse-surface">
@@ -57,37 +100,76 @@ const Contact = () => {
             </a>
           </div>
         </div>
+
         <div className="bg-white border-[5px] border-inverse-surface p-10 neo-shadow-lg">
-          <form className="flex flex-col gap-6" onSubmit={(e) => e.preventDefault()}>
+          <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
             <div>
               <label className="block font-headline font-bold uppercase text-sm mb-2">Your Name</label>
-              <input 
-                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all" 
-                placeholder="JOHN DOE" 
-                type="text" 
+              <input
+                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all"
+                placeholder="JOHN DOE"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                required
+                disabled={status === 'submitting'}
               />
             </div>
             <div>
               <label className="block font-headline font-bold uppercase text-sm mb-2">Email Address</label>
-              <input 
-                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all" 
-                placeholder="JOHN@EXAMPLE.COM" 
-                type="email" 
+              <input
+                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all"
+                placeholder="JOHN@EXAMPLE.COM"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={status === 'submitting'}
               />
             </div>
             <div>
               <label className="block font-headline font-bold uppercase text-sm mb-2">The Brief</label>
-              <textarea 
-                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all" 
-                placeholder="TELL ME ABOUT YOUR VISION..." 
+              <textarea
+                className="w-full bg-surface border-[3px] border-inverse-surface p-4 font-bold focus:outline-none focus:bg-tertiary-container focus:neo-shadow transition-all"
+                placeholder="TELL ME ABOUT YOUR VISION..."
                 rows={4}
-              ></textarea>
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                required
+                disabled={status === 'submitting'}
+              />
             </div>
-            <button 
-              className="bg-inverse-surface text-white py-6 font-headline font-black text-2xl uppercase border-[3px] border-inverse-surface hover:bg-white hover:text-inverse-surface neo-shadow hover:translate-y-[-4px] active:translate-y-[2px] active:shadow-none transition-all" 
+
+            {/* Status messages */}
+            {status === 'success' && (
+              <div className="bg-[#39ff14] border-[3px] border-inverse-surface p-4 font-headline font-bold uppercase text-sm flex items-center gap-2">
+                <span className="material-symbols-outlined text-lg">check_circle</span>
+                Message sent! I'll get back to you soon.
+              </div>
+            )}
+            {status === 'error' && (
+              <div className="bg-red-200 border-[3px] border-inverse-surface p-4 font-headline font-bold uppercase text-sm flex items-center gap-2">
+                <span className="material-symbols-outlined text-lg">error</span>
+                Something went wrong. Please try again.
+              </div>
+            )}
+
+            <button
+              className="bg-inverse-surface text-white py-6 font-headline font-black text-2xl uppercase border-[3px] border-inverse-surface hover:bg-white hover:text-inverse-surface neo-shadow hover:translate-y-[-4px] active:translate-y-[2px] active:shadow-none transition-all disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 flex items-center justify-center gap-3"
               type="submit"
+              disabled={status === 'submitting'}
             >
-              Send Message
+              {status === 'submitting' ? (
+                <>
+                  <svg className="w-6 h-6 animate-spin" viewBox="0 0 24 24" fill="none">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z" />
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                'Send Message'
+              )}
             </button>
           </form>
         </div>

@@ -39,20 +39,13 @@ const ProjectCard = ({ title, description, image, tags, liveLink, codeLink }: Pr
       <p className="font-medium text-lg mb-8 opacity-90 text-justify">{description}</p>
       <div className="mt-auto flex gap-4">
         <a
-          href={liveLink}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-grow bg-inverse-surface text-white py-3 font-headline font-bold uppercase border-[3px] border-inverse-surface hover:bg-primary-container hover:text-inverse-surface transition-colors text-center"
-        >
-          Live Demo
-        </a>
-        <a
           href={codeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-6 border-[3px] border-inverse-surface flex items-center justify-center hover:bg-yellow-300 transition-colors"
+          className="flex-grow bg-inverse-surface text-white py-3 font-headline font-bold uppercase border-[3px] border-inverse-surface hover:bg-yellow-300 hover:text-inverse-surface transition-colors text-center flex items-center justify-center gap-2"
         >
-          <span className="material-symbols-outlined">code</span>
+          <span className="material-symbols-outlined text-lg">code</span>
+          View Project
         </a>
       </div>
     </div>
@@ -63,19 +56,19 @@ const Projects = () => {
   const projects = [
     {
       title: "Discord-Clone",
-      description: "A full-stack real-time messaging platform with channel-based communication, voice/video support, and server management — built with the MERN stack and Socket.io.",
+      description: "A full-stack real-time messaging platform with channel-based communication, voice/video support, and server management.",
       image: discordImg.src,
       tags: ["Next", "WebSockets", "Node", "Express", "MongoDB"],
       liveLink: "#",
-      codeLink: "https://github.com/Pushkaraj-Palli/",
+      codeLink: "https://github.com/Pushkaraj-Palli/Discord-Clone",
     },
     {
       title: "ShopIt",
-      description: "A feature-rich e-commerce web app with product listings, cart management, user authentication, order tracking, and an admin dashboard — powered by the MERN stack.",
+      description: "A feature-rich e-commerce web app with product listings, cart management, user authentication, order tracking, and an admin dashboard.",
       image: shopitImg.src,
       tags: ["Next", "Node", "Express", "MongoDB"],
       liveLink: "#",
-      codeLink: "https://github.com/Pushkaraj-Palli/",
+      codeLink: "https://github.com/Pushkaraj-Palli/shopit",
     },
     {
       title: "Compile-Hub",
@@ -83,7 +76,7 @@ const Projects = () => {
       image: compileHubImg.src,
       tags: ["React", "Node", "Express", "MongoDB"],
       liveLink: "#",
-      codeLink: "https://github.com/Pushkaraj-Palli/",
+      codeLink: "https://github.com/Pushkaraj-Palli/compile-hub",
     },
     {
       title: "StarBrain-AI",
@@ -91,7 +84,7 @@ const Projects = () => {
       image: starBrainImg.src,
       tags: ["React", "Node", "Express", "MongoDB", "Gemini API"],
       liveLink: "#",
-      codeLink: "https://github.com/Pushkaraj-Palli/",
+      codeLink: "https://github.com/Pushkaraj-Palli/StarBrain-AI",
     },
   ];
 

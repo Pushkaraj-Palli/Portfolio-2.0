@@ -3,7 +3,7 @@ import "./globals.css";
 import TargetCursor from "@/components/TargetCursor";
 
 export const metadata: Metadata = {
-  title: "Modern Neo-Brutalist Portfolio",
+  title: "Pushkaraj | Neo-Brutalist Portfolio",
   description: "A high-impact digital manifesto. Rejecting the ordinary.",
 };
 
