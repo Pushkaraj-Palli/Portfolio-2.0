@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
         <div>
           <TextType 
-            text="Have an idea? Let's bring it to life."
+            text="Have an idea? Let's bring it to life"
             as="h2"
             typingSpeed={90 }
             pauseDuration={1800}

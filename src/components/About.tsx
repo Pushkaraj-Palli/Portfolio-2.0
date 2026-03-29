@@ -8,7 +8,7 @@ const About = () => {
         <div className="lg:col-span-7 flex flex-col gap-8">
           <div className="bg-white/80 backdrop-blur-sm border-[5px] border-inverse-surface p-8 neo-shadow">
             <h2 className="font-headline font-extrabold text-5xl uppercase mb-6 underline decoration-primary-container decoration-[8px] underline-offset-8">WHO AM I?</h2>
-            <div className="space-y-4 text-lg font-medium">
+            <div className="space-y-4 text-lg font-medium text-justify">
               <p>I’m a full-stack developer focused on building modern, scalable web applications. I combine clean frontend design with strong backend logic to create products that are efficient, reliable, and user-focused.</p>
               <p>I enjoy working on real-world problems, especially where performance and usability matter. Whether it’s developing APIs, handling data, or crafting interfaces, I aim to deliver solutions that make an impact.</p>
             </div>
