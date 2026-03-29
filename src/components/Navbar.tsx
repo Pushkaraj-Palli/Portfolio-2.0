@@ -22,7 +22,9 @@ const Navbar = () => {
 
         <a 
           className="bg-[#f3f300] px-4 py-1.5 border-[3px] border-[#0e0e0e] font-headline font-black uppercase text-xs hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[3px_3px_0px_0px_rgba(14,14,14,1)] active:translate-x-0 active:translate-y-0 active:shadow-none transition-all" 
-          href="#contact"
+          href="https://drive.google.com/uc?export=download&id=12PLSbVRV6glB_K8XFVHfOTPnRnXRQr90"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           RESUME
         </a>

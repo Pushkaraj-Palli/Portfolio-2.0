@@ -36,7 +36,13 @@ const Hero = () => {
           <a className="bg-primary-container text-inverse-surface font-headline font-bold text-xl uppercase px-10 py-5 border-[4px] border-inverse-surface neo-shadow-lg hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(14,14,14,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all pointer-events-auto" href="#projects">
             View Projects
           </a>
-          <a className="bg-white text-inverse-surface font-headline font-bold text-xl uppercase px-10 py-5 border-[4px] border-inverse-surface neo-shadow-lg hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(14,14,14,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all pointer-events-auto flex items-center justify-center gap-3" href="#">
+          <a 
+            className="bg-white text-inverse-surface font-headline font-bold text-xl uppercase px-10 py-5 border-[4px] border-inverse-surface neo-shadow-lg hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[10px_10px_0px_0px_rgba(14,14,14,1)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all pointer-events-auto flex items-center justify-center gap-3" 
+            href="https://drive.google.com/uc?export=download&id=12PLSbVRV6glB_K8XFVHfOTPnRnXRQr90"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Pushkaraj_Palli_CV.pdf"
+          >
             <FiDownload size={28} strokeWidth={2.5} />
             <span>DOWNLOAD CV</span>
           </a>
