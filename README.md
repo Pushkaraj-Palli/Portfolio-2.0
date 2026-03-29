@@ -1,36 +1,75 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Portfolio 2.0 – Pushkaraj Palli
 
-## Getting Started
+A bold, modern developer portfolio built to showcase projects, skills, and creativity with a strong focus on UI/UX and performance.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🌐 Live Website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Click Me](https://portfolio-2-0-silk-six.vercel.app/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ✨ About
 
-## Learn More
+This is my **personal portfolio website**, designed to highlight my work as a **Full Stack / MERN Developer**.
+It’s not just a showcase—it's a reflection of how I think, design, and build digital products.
 
-To learn more about Next.js, take a look at the following resources:
+> “From pixels to APIs - I build complete web experiences.”
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔥 Features
 
-## Deploy on Vercel
+- ⚡ Modern neo-brutalism inspired UI
+- 🎨 Clean typography with bold design elements
+- 📱 Fully responsive across all devices
+- 🧠 Smooth animations & interactions
+- 💼 Project showcase with detailed sections
+- 🏷️ Categorized skills (Frontend / Backend / Tools)
+- 🚀 Optimized for performance
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Tech Stack
+
+### Frontend
+
+- Next.js
+- Tailwind CSS
+
+## 📸 Preview
+
+<img width="1919" height="983" alt="Image" src="https://github.com/user-attachments/assets/14f87b45-ba93-4774-945a-c57603b8f7a1" />
+<img width="1919" height="981" alt="Image" src="https://github.com/user-attachments/assets/691240f7-62a3-4aba-b12f-3d6c7518acee" />
+---
+
+## 🧠 Philosophy
+
+I believe portfolios should not just display work—they should **feel like a product**.
+This portfolio focuses on:
+
+- Strong visual identity
+- Smooth user experience
+- Clear storytelling of projects
+
+---
+
+## 📬 Contact
+
+Feel free to reach out for collaboration or opportunities:
+
+- 💼 LinkedIn: https://www.linkedin.com/in/pushkaraj-palli-748296269/
+- 📧 Email: pallipushkaraj@gmail.com
+
+---
+
+## ⭐ Support
+
+If you like this portfolio, consider giving it a ⭐ on GitHub!
+
+---
+
+## ⚡ Final Note
+
+Have an idea? Let's bring it to life.
