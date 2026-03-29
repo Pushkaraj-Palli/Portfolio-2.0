@@ -21,9 +21,6 @@ const Hero = () => {
       <div className="absolute top-10 left-10 md:left-20 bg-secondary-container px-4 py-2 border-[3px] border-inverse-surface neo-shadow font-headline font-bold -rotate-6 pointer-events-none">
         HI, I'M PUSHKARAJ
       </div>
-      <div className="absolute bottom-20 right-10 md:right-20 bg-tertiary-container px-4 py-2 border-[3px] border-inverse-surface neo-shadow font-headline font-bold rotate-3 pointer-events-none">
-        BASED IN NYC
-      </div>
       
       <div className="z-10 max-w-4xl pointer-events-none">
         <h1 className="font-headline font-extrabold text-6xl md:text-8xl lg:text-9xl uppercase tracking-tighter text-inverse-surface leading-none mb-6">

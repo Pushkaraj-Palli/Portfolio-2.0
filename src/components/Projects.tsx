@@ -91,7 +91,10 @@ const Projects = () => {
           ))}
         </div>
         <div className="mt-20 text-center">
-          <button className="bg-white px-12 py-6 border-[5px] border-inverse-surface font-headline font-black text-2xl uppercase neo-shadow-lg hover:translate-y-[-4px] transition-all">
+          <button 
+            onClick={() => window.open('https://github.com/Pushkaraj-Palli?tab=repositories', '_blank')}
+            className="bg-white px-12 py-6 border-[5px] border-inverse-surface font-headline font-black text-2xl uppercase neo-shadow-lg hover:translate-y-[-4px] hover:bg-primary-container hover:text-inverse-surface transition-all"
+          >
             View All Repository
           </button>
         </div>

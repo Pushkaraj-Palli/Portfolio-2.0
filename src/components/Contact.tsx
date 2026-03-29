@@ -9,7 +9,7 @@ const Contact = () => {
           <TextType 
             text="LET'S BUILD SOMETHING RADICAL."
             as="h2"
-            typingSpeed={90}
+            typingSpeed={90 }
             pauseDuration={1800}
             showCursor={true}
             cursorCharacter="_"
